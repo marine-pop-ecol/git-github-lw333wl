@@ -1,0 +1,18 @@
+---
+title: "Assignment 1"
+author: "Lucy Wall"
+date: "14/10/2021"
+output: pdf_document
+---
+
+Lucy Wall  **University of British Columbia**  *Orange*
+
+```{r}
+x = c(1,2,3)
+y = c(3,4,5)
+```
+
+library(tidyverse)
+library(here)
+data = data.frame(x, y)
+write.csv(data, here("student-data.csv"))
